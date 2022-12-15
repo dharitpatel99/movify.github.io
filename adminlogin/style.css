@@ -1,0 +1,179 @@
+*{
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'roboto';
+    margin: 0;
+    padding: 0;
+}
+.logo img,footer img{
+    width: 100%;
+    min-height: 50px;
+    max-width: 70px;
+    object-fit: cover;
+}
+
+/* Header */
+.header{
+    background-color: black;
+  
+}
+.container{
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.container-nav{
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    /* border: 1px solid; */
+    color: white;
+    padding: 0 12px;
+    border-collapse: collapse;
+}
+
+.logo{
+    width: 40%;
+    /* margin-left:20px ; */
+}
+.navbar{
+    width: 35%;
+}
+.banner{
+    background: url('background1.jpeg');
+    height: 90vh;
+    border-collapse: collapse;
+    margin-bottom: 1em;
+}
+nav ul{
+    display: flex;
+    justify-content: space-between;
+}
+nav li{
+    list-style: none;
+    font-weight: bold;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+}
+
+/* Main Content */
+main{
+    margin: auto;
+    background-image: linear-gradient(to bottom right, white, #33cccc);
+}
+
+.admin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30rem;
+    flex-direction: column;
+}
+
+.admin h1 {
+    font-weight: bold;
+    font-size: 40px;
+    margin-bottom: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.admin form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    align-items: center;
+    width: auto;
+}
+
+.admin form #user,#pass {
+    display: flex;
+    justify-content: flex-start;
+    align-self: flex-start;
+    align-items: flex-start;
+}
+
+.admin button {
+    background-color:black ;
+    color: #33cccc;
+    border-color: #006666 2px;  
+    cursor: pointer;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+    margin: 5px;
+}
+  
+.admin button:hover {
+    background-color: #006666;
+    color: black;
+    opacity: 0.9;
+    
+}
+
+
+
+/* Footer */
+footer{
+    background-color: #000;
+    padding: 2em 0;
+
+}
+
+.row{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 1.2em;
+    margin-bottom: 1em;
+    border-bottom: 1px solid white;
+
+}
+.footer-col h4{
+    color: #fff;
+    margin-bottom: 0.5em;
+}
+.footer-col ul{
+    list-style: none;
+}
+.footer-col li{
+    margin: 0.3em 0;
+}
+.footer-col a{
+    text-decoration: none;
+    color: rgb(171, 167, 167);
+}
+.footer-logo{
+    text-align: center;
+    margin-bottom: 1em;
+}
+.footer-logo ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-logo a{
+    text-decoration: none;
+    color: white;
+    margin: 0 0.5em;
+}
+.footer-logo img{
+    margin-bottom: 1em;
+}
+.footer-logo i{
+    font-size: 1.2em;
+}
+.copyright{
+    color: white;
+    font-size: 0.8em;
+    margin-top: 1.5em;
+}

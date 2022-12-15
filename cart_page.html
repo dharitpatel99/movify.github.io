@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style-dharit.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container-nav">
+        <div class="logo">
+          <a href="homepage1/index.html"><img src="images/logo.png" alt=""></a>
+        </div>
+        <nav class="navbar">
+          <ul>
+            <li><a href="type_of_seat.html">Tickets</a></li>
+            <li><a href="List_of_movies/list.html">Movies</a></li>
+            <li><a href="6_events.html">Theatres</a></li>
+            <li><a href="logIn/index.html">Login</a></li>
+            <li><a href="RegisterPage/Register.html">Register</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+<div class="container">
+    <main>
+      <section class="cart-movie">
+        <div class="cart-movie-image">
+          <img src="images/movie.jpeg" alt="" />
+        </div>
+        <div class="cart-movie-info">
+          <h1 class="cart-movie-title">Black Adam</h1>
+          <div class="cart-movie-date-time">
+            <div class="cart-movie-date">
+              <p>DATE</p>
+              <h3>Oct 7, 2022</h3>
+            </div>
+            <div class="cart-movie-time">
+              <p>TIME</p>
+              <h3>11:45 AM</h3>
+            </div>
+          </div>
+          <div class="theatre-location">
+            <p>LOCATION</p>
+            <h3>Cineplex Cinemas Varsity and VIP</h3>
+          </div>
+        </div>
+      </section>
+      <section class="cart">
+        <h2 class="cart-header">Order Summary</h2>
+        <div class="cart-summary">
+          <table>
+            <tbody>
+              <tr>
+                <td>Movie ticket (2)</td>
+                <td>CA$ <span id="cart-ticketprice">23.0</span ></td>
+              </tr>
+              <tr>
+                <td>Online Booking Fee</td>
+                <td>CA$ <span id="cart-bookingfee">3.00</span></td>
+              </tr>
+              <tr>
+                <td>Taxes</td>
+                <td>CA$ <span id="cart-tickettax">3.43</span></td>
+              </tr>
+              <tr>
+                <td>Discount</td>
+                <td id="discount">-  CA$ <span id="cart-discount">0</span></td>
+              </tr>
+             
+              <!-- <tr>
+                            <th>Total</th>
+                            <th>CA$29.73</th>
+                        </tr> -->
+            </tbody>
+          </table>
+          <div class="">
+            <h3 class="promotion-code">Promotion Code</h3>
+            <div class="promotion">
+              <input
+                class="promotion-input"
+                type="text"
+                id="promotion-code"
+                placeholder="Enter Promotional Code"
+                
+              />
+              <button class="promotion-btn" onclick="validateCode()">Apply</button>
+            <p><a href="offers_and_deals/offers.html">available code</a></p>
+
+            <p id="code-message"></p>
+            <!-- <p class="failure">failure</p> -->
+
+
+            </div>
+          </div>
+          <div class="cart-total">
+            <h2>Total</h2>
+            <h2>CA$ <span id="cart-totalprice"></span></h2>
+          </div>
+          <div class="checkout">
+            <a href="checkout_page.html"><button class="checkout-btn">Checkout</button></a>
+          </div>
+        </div>
+      </section>
+    </main>
+    </div>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="footer-col">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="">About Us</a></li>
+              <li><a href="">Careers</a></li>
+              <li><a href="">Privacy Policy</a></li>
+              <li><a href="">Affiliate Program</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Get Help</h4>
+            <ul>
+              <li><a href="">FAQ</a></li>
+              <li><a href="">Term of Use</a></li>
+              <li><a href="">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Find A Movie</h4>
+            <ul>
+              <li><a href="">In Theatres</a></li>
+              <li><a href="">Coming Soon</a></li>
+              <li><a href="">More Theatres Nearby</a></li>
+              <li><a href="">Browse All Theatres</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-logo">
+          <img src="images/logo.png" alt="" />
+          <div>
+            <ul>
+              <li>
+                <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="fa-brands fa-pinterest"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+              </li>
+            </ul>
+          </div>
+          <p class="copyright">
+            Copyright 2022 &copy; Movify Pvt. Ltd. All right Reserved
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script src="js/main-dharit.js"></script>
+  </body>
+</html>

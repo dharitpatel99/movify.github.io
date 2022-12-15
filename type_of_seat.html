@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  <link rel="stylesheet" href="css/style_aditi2.css">
+  <style>
+    *{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .container{
+        height: 500px;
+        /* border: 1px solid; */
+        margin: 3em auto;
+        width: 85%;
+        border-radius: 15px;
+        box-shadow: 1px 1px 5px rgba(100,100,100,0.5);
+        padding-top: 10px;
+        /* margin: 2em 0; */
+    }
+    .container-type-seat {
+        text-align: center;
+        border: 1px solid;
+
+    }
+    .container-type-seat button{
+        border: none;
+        font-size: 30px;
+        margin: 1em 0;
+        margin-left: 1em;
+        cursor: pointer;
+
+    }
+    .container-type-seat #no-of-seat{
+        display: flex;
+        justify-content: space-between;
+        margin: 2em 0;
+        font-size: 1.5em;
+        list-style: none;
+        text-decoration: none;
+    }
+    .number-of-seat{
+        padding-right: 10px;
+    }
+    .number-of-seat p{
+        cursor: pointer;
+    }
+    .select{
+        background-color: lightgreen;
+        padding: 0px 7px;
+        border-radius: 5px;
+        border: none
+    }
+    .seat-type{
+        display: flex;
+        justify-content: space-evenly;
+        border: 1px solid;
+        padding: 1em 0;
+    }
+    .seattype input{
+        font-size: 18px;
+    }
+    .seat-selected{
+        font-size: 20px;
+        margin: 2em 0;
+    }
+    .seatype-selected{
+        font-size: 20px;
+
+    }
+    .next-button-container{
+        margin-top: 1.2em;
+        font-size: 1.2em;
+    }
+    .next-button{
+        text-decoration: none;
+        background-color: green;
+        padding: 0.3em 0.4em;
+        border-radius: 5px;
+        color: white;
+    }
+
+  </style>
+
+</head>
+<body>
+    <header class="header">
+        <div class="container-nav">
+        <div class="logo">
+            <a href="homepage1/index.html"><img src="images/logo.png" alt=""></a>
+        </div>
+        <nav class="navbar">
+            <ul>
+              <li><a href="type_of_seat.html">Tickets</a></li>
+              <li><a href="List_of_movies/list.html">Movies</a></li>
+              <li><a href="6_events.html">Theatres</a></li>
+              <li><a href="index.html">Login</a></li>
+              <li><a href="RegisterPage/Register.html">Register</a></li>
+            </ul>
+        </nav>
+    </div>
+    </header>
+  
+    <main>
+        <div class="container container-type-seat">
+            <h2>How Many Seats ?</h2>
+            <div class="number-of-seat">
+            <ul id="no-of-seat">
+            </ul>  
+            </div>
+            <div class="type-of-seat">
+
+            </div>
+            <h2>Type of seat</h2>
+          
+            <div class="seat-type">
+                <div>
+                    <p>Normal<input type="radio" name="seattype" value="Normal" checked onchange="handleClick(this.value)" id=""></p> 
+<p>CA$ 16.50</p>
+                </div>
+                <div>
+                    <p>Premium<input type="radio" name="seattype" value="Premium" onchange="handleClick(this.value)" id=""></p> 
+                    <p>CA$ 20.50</p>
+                </div>
+                <div>
+                    <p>Recliner<input type="radio" name="seattype" value="Recliner" onchange="handleClick(this.value)" id=""></p>
+                    <p>CA$ 24.50</p>
+                </div>
+            </div>
+
+            <div class="seat-selected">
+                <p>Number of seats selected :  <span>0</span></p>
+            </div>
+            <div class="seatype-selected">
+                 <p>Seats type selected :  <span>Normal</span></p>
+            </div>
+            <div class="next-button-container">
+            <a class="next-button" href="seat_select.html">NEXT</a>
+
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="">About Us</a></li>
+                        <li><a href="">Careers</a></li>
+                        <li><a href="">Privacy Policy</a></li>
+                        <li><a href="">Affiliate Program</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Get Help</h4>
+                    <ul>
+                        <li><a href="">FAQ</a></li>
+                        <li><a href="">Term of Use</a></li>
+                        <li><a href="">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Find A Movie</h4>
+                    <ul>
+                        <li><a href="">In Theatres</a></li>
+                        <li><a href="">Coming Soon</a></li>
+                        <li><a href="">More Theatres Nearby</a></li>
+                        <li><a href="">Browse All Theatres</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-logo">
+                <img src="images/logo.png" alt="">
+                <div>
+                    <ul>
+                        <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                        <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href=""><i class="fa-brands fa-pinterest"></i></a></li>
+                        <li><a href=""><i class="fa-brands fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+                <p class="copyright">Copyright 2022 &copy; Movify Pvt. Ltd. All right Reserved</p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        const pointer = document.querySelector('.number-of-seat');
+        const seatselected = document.querySelector('.seat-selected span');
+        const seattypeselected = document.querySelector('.seatype-selected span');
+        const allSeat = document.querySelectorAll('.notselect');
+        const radio = document.querySelector('input[name="seattype"]:checked');
+        if(radio != null){
+            
+        }
+        pointer.addEventListener('click',(e)=>{
+            // alert(e.target.innerHTML)
+        
+            if(e.target.classList.contains('notselect')){
+            e.target.classList.toggle('select');
+            seatselected.innerHTML = e.target.innerHTML;
+        }
+      
+        })
+
+        const NUMBER = 10;
+        const seatCountId = document.querySelector('#no-of-seat');
+        seatCountId.innerHTML = '';
+        for(let i =1 ; i<= NUMBER; i++){
+            seatCountId.innerHTML += `<li class="notselect seater" value=${i}>${i}</li>`;
+        }
+
+        function handleClick(c){
+            seattypeselected.innerHTML = c;
+        }
+
+    </script>
+</body>
+</html>
